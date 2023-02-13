@@ -3,34 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.scss" />
+    <link rel="stylesheet" href="style.scss" />
     <title>IT-hulp | Aanbod</title>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li>
-            <h1><a href="#">it-hulp</a></h1>
-          </li>
-          <li><a href="#">aanbod</a></li>
-          <li><a href="#">regio's</a></li>
-          <li><a href="#">over ons</a></li>
-          <li><a href="#">tarieven</a></li>
-          <li><a href="#">downloads</a></li>
-          <li><a href="#">contact</a></li>
-        </ul>
-      </nav>
-      <p>Snelle service, goede prijs/kwaliteit en voor al uw apparaten</p>
-      <p>uw computerspecialist in uw regio</p>
-      <a href="mailto:tom@it-hulpaanhuis.be">tom@it-hulpaanhuis.be</a><br />
-      <a href="tel:+32474040680">+32 (0) 474 04 06 80</a>
+      <div class="container">
+        <nav>
+          <ul>
+            <li class="logo">
+              <h1>
+                <a href="#"><p class="sr-only">IT-hulp</p></a>
+              </h1>
+            </li>
+            <li><a href="#">aanbod</a></li>
+            <li><a href="#">regio's</a></li>
+            <li><a href="#">over ons</a></li>
+            <li><a href="#">tarieven</a></li>
+            <li><a href="#">downloads</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+        <div class="hero-text">
+          <p>Snelle service, goede prijs/kwaliteit en voor al uw apparaten</p>
+          <p>uw computerspecialist in uw regio</p>
+        </div>
+      </div>
+      <div class="side-icons">
+        <a class="icon mail" href="mailto:tom@it-hulpaanhuis.be"
+          ><p class="sr-only">tom@it-hulpaanhuis.be</p></a
+        >
+        <a class="icon tel" href="tel:+32474040680"
+          ><p class="sr-only">+32 (0) 474 04 06 80</p></a
+        >
+      </div>
     </header>
     <main>
       <h2>
         <p>ontdek ons</p>
         <p>ruim aanbod</p>
       </h2>
-      <ul>
+      <ul class="services">
         <li>
           <article>
             <h3>Computerhulp</h3>

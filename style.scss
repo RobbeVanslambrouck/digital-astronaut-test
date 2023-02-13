@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+$color-titles: #e1e9f3;
+$color-text: #b6c3d1;
+$color-highlight: #bda655;
+
+body {
+  background: #1f2327;
+  color: $color-text;
+  font-family: 'League Spartan';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-titles;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+header {
+  padding-top: 30px;
+  height: 720px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url(/Hero.png);
+  nav {
+    ul {
+      display: flex;
+      gap: 60px;
+      justify-content: end;
+      align-items: center;
+      .logo {
+        width: 100%;
+      }
+      h1 {
+        a {
+          width: 100px;
+          height: 100px;
+          background: url(/Brand.svg);
+        }
+        width: 100px;
+        height: 100px;
+      }
+      a {
+        color: $color-titles;
+        display: inline-block;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 30px;
+        text-decoration: none;
+        white-space: nowrap;
+
+        &::first-letter {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .hero-text {
+    margin-top: 148px;
+    p {
+      text-align: center;
+      letter-spacing: 0em;
+
+      &:first-child {
+        color: $color-highlight;
+        font-family: Merriweather;
+        font-size: 22px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+
+    color: $color-titles;
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 65px;
+  }
+
+  .side-icons {
+    position: absolute;
+    right: 0;
+    top: 454px;
+    border-radius: 10px 0px 0px 10px;
+    background: $color-highlight;
+
+    .icon {
+      border-bottom: 1px solid #a88d2f;
+      display: block;
+      width: 50px;
+      height: 50px;
+    }
+
+    .icon:last-of-type {
+      border: none;
+    }
+
+    .mail {
+      background: url(/mail.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .tel {
+      background: url(/phone.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.services {
+  ul {
+    display: flex;
+  }
+
+  article {
+    display: block;
+    a {
+      color: #bda655;
+    }
+  }
+}
