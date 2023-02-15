@@ -1,0 +1,104 @@
+header {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url(/Hero.png);
+  height: 720px;
+  margin-bottom: 120px;
+  padding-top: 30px;
+  position: relative;
+}
+
+nav {
+  margin-bottom: 148px;
+  ul {
+    align-items: center;
+    display: flex;
+    gap: 60px;
+    justify-content: end;
+  }
+  .logo {
+    width: 100%;
+  }
+  h1 {
+    height: 100px;
+    a {
+      background: url(/Brand.svg);
+      height: 100px;
+      width: 100px;
+    }
+  }
+  a {
+    color: $color-titles;
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+
+    &:active,
+    &:hover {
+      color: $color-highlight;
+    }
+  }
+}
+
+.hero-text {
+  color: $color-titles;
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 65px;
+  margin: 0 auto;
+  max-width: 697px;
+  text-align: center;
+
+  p:first-of-type {
+    color: $color-highlight;
+    font-family: Merriweather;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 11px;
+  }
+}
+
+.side-icons {
+  background: $color-highlight;
+  border-radius: 10px 0px 0px 10px;
+  position: absolute;
+  right: 0;
+  top: 454px;
+
+  .icon {
+    border-bottom: 1px solid #a88d2f;
+    display: block;
+    height: 50px;
+    width: 50px;
+
+    &:last-of-type {
+      border: none;
+    }
+  }
+
+  @mixin background($url) {
+    background: url($url);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .mail {
+    @include background('/public/mail.svg');
+  }
+
+  .tel {
+    @include background('/public/phone.svg');
+  }
+}
