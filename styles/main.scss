@@ -89,6 +89,12 @@ h2 {
         position: absolute;
         top: 100%;
         width: 75px;
+        transition: 0.5s;
+      }
+
+      &:hover::before {
+        width: 100px;
+        transition: 0.5s;
       }
     }
   }
