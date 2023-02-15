@@ -20,8 +20,9 @@ h6 {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1230px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .sr-only {
@@ -136,8 +137,11 @@ header {
     }
   }
 }
-
+main {
+  position: relative;
+}
 .services {
+  padding-bottom: 290px;
   h2 {
     margin-bottom: 90px;
     font-size: 40px;
@@ -233,13 +237,14 @@ header {
     line-height: 24px;
     letter-spacing: 0em;
     text-align: center;
-    margin-bottom: 140px;
   }
 }
 .contact {
+  position: absolute;
+  left: calc(50% - 900px / 2);
+  bottom: -150px;
   display: flex;
   align-items: center;
-  margin: 0 auto;
   width: 900px;
   height: 300px;
   border-radius: 10px;
@@ -287,5 +292,84 @@ header {
       text-decoration: none;
       text-transform: uppercase;
     }
+  }
+}
+
+footer {
+  background-color: #e1e9f3;
+  padding-top: 230px;
+  padding-bottom: 60px;
+
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 186px;
+  }
+
+  h3 {
+    color: #1f2327;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 22px;
+    letter-spacing: 0em;
+    margin-bottom: 10px;
+  }
+
+  section {
+    color: #1f2327;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    a {
+      color: $color-highlight;
+    }
+
+    &:first-of-type {
+      margin-right: auto;
+    }
+  }
+
+  .socials {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+    a {
+      display: block;
+      background-color: #1f2327;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+
+      img {
+        width: 40px;
+        height: 16px;
+        margin: calc((40px - 16px) / 2) 0;
+      }
+    }
+  }
+
+  .sitemap,
+  .siteinfo {
+    a {
+      display: block;
+      color: #1f2327;
+    }
+
+    .copyright {
+      margin-top: 1em;
+      color: #b6c3d1;
+
+      a {
+        display: inline;
+        color: #b6c3d1;
+      }
+    }
+  }
+
+  .siteinfo {
+    margin-top: 32px;
   }
 }
